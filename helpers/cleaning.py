@@ -12,8 +12,8 @@ PATH = "/home/anne/tmpanne/"
 FILENAME = "uniekezinnen_1991-01-01_2018-12-31_ad_trouw"
 FILE_CLEAN = "uniekezinnen_1991-01-01_2018-12-31_ad_trouw_clean"
 
-documents = [line.strip() for line in open(FILENAME).readlines() if len(line)>1 and len(line)< 200]
-stopwords = [line.strip() for line in open('../stopwords/stopwords_NL.txt').readlines() if len(line)>1]
+documents = [line.strip() for line in open(FILENAME, 'r+', encoding="utf-8").readlines() if len(line)>1 and len(line)< 200]
+stopwords = [line.strip() for line in open('../stopwords/stopwords_NL.txt', 'r+', encoding="utf-8").readlines() if len(line)>1]
 
 text_clean = [" ".join([w for w in speech.split() if w not in mystopwords]) for speech in documents]
 

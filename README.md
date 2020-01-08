@@ -1,4 +1,4 @@
-# media-and-sexual-abuse
+# media-sexual-assault-minorities
 Automated content analysis of media coverage of sexual abuse
 
 ---
@@ -9,12 +9,17 @@ This repo contains the following elements:
 -  Get associations
 -  Get results + visuals
 
-We extend our dataset with the newspaper dataset reported here: https://journals.sagepub.com/doi/10.1177/0002716215569441
-
 ---
 
-## Model training:
+## Attention for sexual assault and minorities in Dutch news: `/media_attention/`
 
+`/media_attention/get_timeline_data_from_inca`: this file will retrieve relevant frequenties from Dutch newspapers.
+Search terms included.
+
+`/media_attention/plot_media_attention`: this file will use the output of `/media_attention/get_timeline_data_from_inca` to create graphs.
+
+
+## Model training:
 
 ## Get associations from embedding models:
 
